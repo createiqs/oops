@@ -1,0 +1,2 @@
+CricketPlayer [numberOfCenturies=100, numberOfOffcenturies=150, points=3500, bowleningAverage=35.0]
+CricketPlayer [numberOfCenturies=45, numberOfOffcenturies=125, points=3200, bowleningAverage=27.0]
