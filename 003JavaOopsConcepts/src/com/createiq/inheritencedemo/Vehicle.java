@@ -1,24 +1,51 @@
 package com.createiq.inheritencedemo;
-
-import com.createiq.accessmodifiers.Account;
-
+/**
+ * Created by dev on 6/07/15.
+ */
 public class Vehicle {
+    private String name;
+    private String size;
 
-	public void engine() {
-		System.out.println("vehicle engine");
-	}
+    private int currentVelocity;
+    private int currentDirection;
 
-	public void wheels() {
-		System.out.println("vehicle wheels");
-	}
+    public Vehicle(String name, String size) {
+        this.name = name;
+        this.size = size;
 
-	public void breaks() {
-		System.out.println("vehicle breaks");
-	}
+        this.currentVelocity = 0;
+        this.currentDirection = 0;
+    }
 
-	public static void main(String[] args) {
-		Account account = new Account();
-//		account.deposit();
-	}
+    public void steer(int direction) {
+        this.currentDirection += direction;
+        System.out.println("Vehicle.steer(): Steering at " + currentDirection + " degrees.");
+    }
 
+    public void move(int velocity, int direction) {
+        currentVelocity = velocity;
+        currentDirection = direction;
+        System.out.println("Vehicle.move(): Moving at  " + currentVelocity + " in direction " + currentDirection);
+
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public int getCurrentVelocity() {
+        return currentVelocity;
+    }
+
+    public int getCurrentDirection() {
+        return currentDirection;
+    }
+
+    public void stop() {
+        this.currentVelocity = 0;
+    }
 }
