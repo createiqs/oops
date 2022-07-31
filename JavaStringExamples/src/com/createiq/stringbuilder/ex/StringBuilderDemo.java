@@ -1,6 +1,12 @@
 package com.createiq.stringbuilder.ex;
 
+/**
+ * @author srikanth
+ *
+ */
 public class StringBuilderDemo {
+	
+	
 
 	public static void diffBwBufferAndBuilder() {
 		long startTime = System.currentTimeMillis();

@@ -1,6 +1,12 @@
 package com.createiq.string.ex;
 
+/**
+ * @author srikanth
+ *
+ */
 public class StringUtil {
+	
+	
 
 	public static int factorial(int number) {
 		if (number != 0) {
