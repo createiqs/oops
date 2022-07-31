@@ -1,0 +1,19 @@
+What is the use of String builder?
+The StringBuilder class is useful for storing mutable elements. 
+This saves memory because no extra memory is used after updating the StringBuilder sequence.
+
+Why do we use String builder in Java?
+One of the main reasons is StringBuilder is not thread-safe which means 
+When multiple threads can access a StringBuilder object, it increases performance
+ because no thread has to wait for their turn for a particular operation.
+
+Is String builder efficient?:
+Yes, StringBuilder is efficient because due to the mutable and non-thread-safe property of the StringBuilder.
+
+Which is better: StringBuilder or String?:
+StringBuilder is better because it is 6000 times faster than the String class.
+
+Conclusion
+String builders are mutable alternatives to regular strings in Java.
+They provide better performance, especially when performing repeated concatenations.
+They are not thread-safe and take up more memory than immutable strings.

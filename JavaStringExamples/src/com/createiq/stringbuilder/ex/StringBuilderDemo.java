@@ -41,11 +41,16 @@ public class StringBuilderDemo {
 
 		System.out.println(builder.toString());
 	}
-
-	public static void main(String[] args) {
-
-//		System.out.println(System.currentTimeMillis());
-		
+	
+	public static void increaseCapacity() {
+		  StringBuilder first = new StringBuilder();
+	      System.out.println("Default Capacity: "+first.capacity());
+	      //Capacity increase by (16(default capacity)+1)*2=34
+	      first.append("aaaaaaaaaaaaaaaaaa");
+	      System.out.println("After Full, New Capacity: "+first.capacity());
+	}
+	
+	public static void builderOtherMethods() {
 		StringBuilder sb1=new StringBuilder();
 		sb1.append("welcome to java programming");
 		System.out.println(sb1);
@@ -56,16 +61,22 @@ public class StringBuilderDemo {
 		System.out.println(sb2.length());
 		System.out.println(sb2.toString());
 		System.out.println(sb2.capacity());
-		
-		
-		  StringBuilder first = new StringBuilder();
-	      System.out.println("Default Capacity: "+first.capacity());
-	      //Capacity increase by (16(default capacity)+1)*2=34
-	      first.append("aaaaaaaaaaaaaaaaaa");
-	      System.out.println("After Full, New Capacity: "+first.capacity());
-		
-		
+	}
 
+	
+	// converting into string
+	public static void convertingString() {
+	      StringBuilder second = new StringBuilder();
+	      second.append("SoftwareTestingo");
+	      
+	      //Convert Stringbuilder to String
+	      System.out.println(second.toString());
+	      
+	}
+	public static void main(String[] args) {
+
+//		System.out.println(System.currentTimeMillis());
+		
 	}
 
 }
